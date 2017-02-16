@@ -1,3 +1,6 @@
+#credential
+config.ini
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -84,6 +87,7 @@ ENV/
 
 # Spyder project settings
 .spyderproject
+.spyderworkspace
 
 # Rope project settings
 .ropeproject

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="InvoiceIt.InvoicesPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:InvoiceIt"
+             Title="Agitare Alpha Test">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Command="{Binding AddInvoiceCommand}" Text="Add" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ListView HasUnevenRows="True"
+                  ItemsSource="{Binding Invoices}"
+                  SeparatorVisibility="None"
+                  IsRefreshing="{Binding IsBusy, Mode=OneWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <local:CardViewCell Detail1="{Binding ScoredLabel1}"
+                                        Detail2="{Binding ScoredLabel2}"
+                                        Detail3="{Binding ScoredLabel3}"
+                                        ImageSource="{Binding Photo}"
+                                        Text="{Binding TimeStamp}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
