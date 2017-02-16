@@ -1,7 +1,7 @@
 # receipt-recognition
 Purpose: Predict type of expenses from imaged receipt, using Microsoft's OCR and AzureML. 
 
-Accompanying [blog](https://ryubidragonfire.github.io/blogs/2017/01/02/expense-recognition.html).
+Accompanying [post](https://www.microsoft.com/developerblog/real-life-code/2017/01/02/expense-recognition.html).
 
 ML/Data Prep (Python):
 ----------------------
